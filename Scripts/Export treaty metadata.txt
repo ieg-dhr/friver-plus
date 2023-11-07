@@ -1,0 +1,12 @@
+SELECT treaty.id as treaty_id, treaty.internal_date, treaty.ts, translations.date, translations.title, archives.id as archives_id, archives.archive, locations.id as locations_id, locations.location, treaty.partners
+from _ieg_treaty as treaty
+inner join _ieg_treaty_translations translations on treaty.id=translations.treaty
+inner join _ieg_treaty_archives archives on treaty.archive=archives.id
+inner join _ieg_treaty_locations locations on treaty.location=locations.id
+
+N.B. Information about language is missing in this query, added this manually on the basis of this query:
+
+SELECT treaty.id as treaty_id, treaty.language as language_id, treaty_languages.language as treaty_language
+from _ieg_treaty as treaty
+inner join _ieg_treaty_languages treaty_languages on treaty.language=treaty_languages.id
+WHERE treaty.status = "active"
