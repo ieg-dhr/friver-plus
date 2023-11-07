@@ -1,0 +1,36 @@
+Step 1:
+
+create view treaty_comments_extended as 
+(select treaty_comments.treaty, treaty_translations.html_area, treaty_comments.title, treaty_comments.comment,
+case when treaty_comments.title = 'Ausfertigungen' then comment end as Ausfertigungen,
+case when treaty_comments.title = 'Drucke' then comment end as Drucke,
+case when treaty_comments.title = 'Edition' then comment end as Edition,
+case when treaty_comments.title = 'Inhalt' then comment end as Inhalt,
+case when treaty_comments.title = 'Kommentar' then comment end as Kommentar,
+case when treaty_comments.title = 'Kontext' then comment end as Kontext,
+case when treaty_comments.title = 'Literatur' then comment end as Literatur,
+case when treaty_comments.title = 'Transkription' then comment end as Transkription
+
+from _ieg_treaty_comments as treaty_comments
+inner join _ieg_treaty_translations treaty_translations on treaty_comments.treaty = treaty_translations.treaty
+);
+select * from treaty_comments_extended
+
+Step 2:
+
+create view treaty_comments_extended_pivot as 
+(select treaty_comments_extended.treaty, treaty_comments_extended.html_area,
+max(Ausfertigungen) as Ausfertigungen,
+max(Drucke) as Drucke,
+max(Edition) as Edition,
+max(Inhalt) as Inhalt,
+max(Kommentar) as Kommentar,
+max(Kontext) as Kontext,
+max(Literatur) as Literatur,
+max(Transkription) as Transkription
+
+from treaty_comments_extended
+group by treaty_comments_extended.treaty, treaty_comments_extended.html_area
+order by treaty_comments_extended.treaty);
+
+select * from treaty_comments_extended_pivot
