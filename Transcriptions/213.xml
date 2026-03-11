@@ -156,7 +156,7 @@
         </facsimile>
     </standOff>
     <text>
-        <front>
+        <body>
             <div type="Transliteration">
                 <pb facs="#FacsPnr1"/><p>Cal: Or: Ar: Des: 31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maintz 
                     <lb /> zweite Cammer unten 
@@ -235,7 +235,7 @@
                     <lb />geschlosßen unnd zuegesagt worden, daß obgedachte Defensions
                     <lb />Verein, in den terminis unnd Clausulen, wie solche aufgesetzt
                     <lb />(: unnd nun auch die König[lich] Schwedische Pomerische Lande nach
-                        <lb />nunmehr erfolgendem<note type="crit_app" n="3">erfolgendem: Nachträglich geändert zu erfolgeten.</note> Pohlnischen Friden würckhlich mit ein-
+                    <lb />nunmehr erfolgendem<note type="crit_app" n="3">erfolgendem: Nachträglich geändert zu erfolgeten.</note> Pohlnischen Friden würckhlich mit ein-
                     <lb />geschlosßen; Nach Verfließung obgemelter Dreÿer Jahren
                 </p>
                 <pb facs="#FacsPnr4"/><p>benandthlichen von dem 14/4. unnd 15/5. Augusti deß einstehenden 
@@ -289,7 +289,7 @@
                     <lb />
                 </p> 
             </div>
-        </front>
+        </body>
         <back>
             <listBibl>
                 <bibl xml:id="a286">
