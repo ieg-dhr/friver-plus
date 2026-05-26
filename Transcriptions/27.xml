@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE tei SYSTEM "../resources/FriVer_DTD.dtd">
+<!DOCTYPE tei PUBLIC "https://spurl.ieg-mainz.de/friver/FriVer_DTD.dtd" "https://spurl.ieg-mainz.de/friver/FriVer_DTD.dtd">
+
 
 <?xml-model href="../XML%20schema%20FriVer/FriVer.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
